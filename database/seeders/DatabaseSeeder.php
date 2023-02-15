@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $film = Film::factory(rand(5, 30))
-            ->has(Comment::factory()->count(rand(0, 300)))
+            ->has(Comment::factory()->count(rand(0, 1)))
             ->create();
     }
 }
